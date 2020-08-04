@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@media all and (max-width: 767px) {
+  /* Variables */
+  /* Mixins */
+  /* Polices */
+  @font-face {
+    font-family: "Red Hat Display", sans-serif;
+    src: "";
+  }
+  /* Général */
+  html {
+    font-size: 100%;
+    background-color: black;
+  }
+
+  body {
+    font-size: 0.8em;
+    max-width: 767px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-color: white;
+  }
+
+  /* Block en tête */
+  .header {
+    background-color: #579C87;
+    box-shadow: 0px 1px 3px 0px #579C87;
+  }
+  .header__title {
+    margin-top: 0%;
+    margin-bottom: 40px;
+    color: #FDCB46;
+    text-align: center;
+    padding: 20px 0%;
+    font-size: 3.2em;
+    font-weight: bold;
+    font-family: "Red Hat Display";
+    letter-spacing: -2.5px;
+  }
+
+  /* Block Menu */
+  .menuSelect {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menuSelect__menu--shadow {
+    box-shadow: 0px 0px 8px -5px #000000;
+  }
+  .menuSelect__menu--dim {
+    text-align: center;
+    min-width: 35%;
+    min-height: 300px;
+    margin-bottom: 40px;
+  }
+  .menuSelect__menu1, .menuSelect__menu3 {
+    margin-left: 12%;
+    margin-right: 7%;
+  }
+  .menuSelect__menu2, .menuSelect__menu4 {
+    margin-right: 10%;
+  }
+  .menuSelect__menu1 {
+    background-color: #FCDFDB;
+  }
+  .menuSelect__menu2 {
+    background-color: #FFF5FE;
+  }
+  .menuSelect__menu3 {
+    background-color: #F9F9F9;
+  }
+  .menuSelect__menu4 {
+    background-color: #FDFFFD;
+  }
+  .menuSelect__btnProch {
+    background-color: #579C87;
+    color: #FDCB46;
+    padding-left: 8%;
+    padding-right: 8%;
+    max-height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+    border-radius: 10px;
+  }
+  .menuSelect__btnProch--txt {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: "Red Hat Display";
+    letter-spacing: 1px;
+  }
+
+  /* Block Pied de page */
+  .footer {
+    display: flex;
+    background-color: #579C87;
+    color: #FDCB46;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "Red Hat Display";
+    letter-spacing: 0px;
+  }
+  .footer__menLeg {
+    margin-left: 10px;
+    flex: 2;
+  }
+  .footer__contact {
+    margin-right: 10px;
+  }
+  .footer__menLeg, .footer__contact {
+    margin-bottom: 0%;
+    margin-top: 0%;
+  }
+}
+
+/*# sourceMappingURL=mobile_style.css.map */
