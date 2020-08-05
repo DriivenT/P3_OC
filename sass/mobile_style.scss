@@ -3,18 +3,42 @@
     /* Variables */
     $main-bgcolor: #579C87;
     $main-color: #FDCB46;
+    $fontP: Red Hat Display;
+    $fontMenu: Chilanka;
+    $fontM1: Leckerli One;
+    $fontM2: Lobster Two;
+    $fontM3: Dancing Script;
+    $fontM4: Caveat;
+
 
     /* Mixins */
 
-    @mixin font($letterSp: 0px) {
-        font-family: "Red Hat Display";
+    @mixin font($font, $letterSp: 0px) {
+        font-family: $font;
         letter-spacing: $letterSp;
+    }
+
+    @mixin fontMenu{
+        @include font($fontMenu);
+                    font-weight: bold;
+                    font-size: 2em;
+                    margin: 0%;
     }
 
     /* Polices */
     @font-face {
-        font-family: "Red Hat Display", sans-serif;
-        src:""
+        font-family: Red Hat Display, sans-serif;
+        src:"Google Font";
+        font-family: Leckerli One, cursive;
+        src:"Google Font";
+        font-family: Chilanka, cursive;
+        src:"Google Font";
+        font-family: Dancing Script, cursive;
+        src:"Google Font";
+        font-family: Lobster Two, cursive;
+        src:"Google Font";
+        font-family: Caveat, cursive;
+        src:"Google Font";
     }
 
     /* Général */
@@ -24,6 +48,7 @@
     }
 
     body{
+        overflow-y: hidden;
         font-size: .8em;
         max-width: 767px;
         margin-right: auto;
@@ -31,6 +56,11 @@
         margin-top: 0%;
         margin-bottom: 0%;
         background-color: white;
+    }
+
+    html, body{
+        height: auto;
+        min-height: 100vh;
     }
 
     /* Block en tête */
@@ -46,7 +76,7 @@
             padding: 20px 0%;
             font-size: 3.2em;
             font-weight: bold;
-            @include font(-2.5px);
+            @include font($fontP, -2.5px);
         }
     }
 
@@ -64,23 +94,85 @@
             &--dim{
                 text-align: center;
                 min-width: 35%;
-                min-height: 300px;
+                min-height: 230px;
                 margin-bottom: 40px;
+                font-size: 1.1em;
             }
 
             &1, &3{
-                margin-left: 12%;
-                margin-right: 7%;
+                margin-left: 10%;
+                margin-right: 10%;
             }
 
             &2, &4{
                 margin-right: 10%;
             }
 
-            &1{ background-color: #FCDFDB; }
-            &2{ background-color: #FFF5FE; }
-            &3{ background-color: #F9F9F9; }
-            &4{ background-color: #FDFFFD; }
+            &1{
+                background-color: #FCDFDB;
+
+                &--p1, &--p2{
+                    color: #3C1218;
+                }
+
+                &--p1{
+                    @include font($fontM1);
+                    margin: 0%;
+                }
+                &--p2{
+                    @include fontMenu;
+                }
+            }
+            &2{
+                background-color: #FFF5FE;
+
+                &--p1{
+                    background: linear-gradient(to right, #C77412, #935EFC);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    @include font($fontM2);
+                    margin: 0%;
+                }
+                &--p2{
+                    color: #C77412;
+                    @include fontMenu;
+                }
+            }
+            &3{
+                background-color: #F9F9F9;
+
+                &--p1{
+                    background: linear-gradient(to right, #0431DF, #0887FB);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    @include font($fontM3);
+                    font-size: 1.2em;
+                    margin: 0%;
+                }
+                &--p2{
+                    color: #0887FB;
+                    @include fontMenu;
+                }
+            }
+            &4{
+                background-color: #FDFFFD;
+
+                &--p1{
+                    background: linear-gradient(to right, #3D9339, #72BF56);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    @include font($fontM4);
+                    font-size: 1.4em;
+                    margin: 0%;
+                }
+                &--p2{
+                    color: #72BF56;
+                    @include fontMenu;
+                }
+            }
         }
 
         &__btnProch{
@@ -96,12 +188,12 @@
 
             &--txt{
                 text-align: center;
-                font-size: 25px;
+                font-size: 20px;
                 margin-top: 0%;
                 margin-bottom: 0%;
                 padding-top: 8px;
                 padding-bottom: 8px;
-                @include font(1px);
+                @include font($fontP, 1px);
             }
         }   
     }
@@ -116,7 +208,7 @@
         font-weight: 500;
         padding-top: 15px;
         padding-bottom: 15px;
-        @include font;
+        @include font($fontP);
 
         &__menLeg{
             margin-left: 10px;
