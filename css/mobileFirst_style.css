@@ -1,0 +1,216 @@
+@charset "UTF-8";
+/* Variables */
+/* Mixins */
+/* Maps */
+/* Polices */
+@font-face {
+  font-family: Red Hat Display, sans-serif;
+  src: "Google Font";
+  font-family: Leckerli One, cursive;
+  src: "Google Font";
+  font-family: Chilanka, cursive;
+  src: "Google Font";
+  font-family: Dancing Script, cursive;
+  src: "Google Font";
+  font-family: Lobster Two, cursive;
+  src: "Google Font";
+  font-family: Caveat, cursive;
+  src: "Google Font";
+}
+/* Général */
+html {
+  font-size: 100%;
+  background-color: black;
+}
+
+body {
+  overflow-y: hidden;
+  font-size: 0.8em;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  max-width: 1200px;
+}
+
+html, body {
+  height: auto;
+  min-height: 100vh;
+}
+
+/* Block en tête */
+.header {
+  background-color: #579C87;
+  box-shadow: 0px 1px 3px 0px #579C87;
+}
+.header__title {
+  margin-top: 0%;
+  margin-bottom: 40px;
+  color: #FDCB46;
+  text-align: center;
+  padding: 20px 0%;
+  font-weight: bold;
+  font-family: Red Hat Display;
+  letter-spacing: -2.5px;
+  font-size: 3.2em;
+}
+
+/* Block Menu */
+.menuSelect {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menuSelect__menu--shadow {
+  box-shadow: 0px 0px 8px -5px #000000;
+}
+.menuSelect__menu--property {
+  min-width: 35%;
+  min-height: 230px;
+  margin: auto;
+  margin-bottom: 40px;
+  font-size: 1.1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+}
+.menuSelect__menu1 {
+  background-color: #FCDFDB;
+}
+.menuSelect__menu1--note {
+  font-size: 2em;
+  background: linear-gradient(to right, #F15360, #F78F6A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.menuSelect__menu1--p1, .menuSelect__menu1--p2 {
+  color: #3C1218;
+}
+.menuSelect__menu1--p1 {
+  font-family: Leckerli One;
+  letter-spacing: 0px;
+  font-size: 110%;
+  margin-top: 0%;
+}
+.menuSelect__menu1--p2 {
+  font-family: Chilanka;
+  letter-spacing: 0px;
+  font-size: 100%;
+  font-weight: bold;
+  font-size: 1.8em;
+  margin: 0%;
+}
+.menuSelect__menu2 {
+  background-color: #FFF5FE;
+}
+.menuSelect__menu2--p1 {
+  background: linear-gradient(to right, #C77412, #935EFC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: Lobster Two;
+  letter-spacing: 0px;
+  font-size: 110%;
+}
+.menuSelect__menu2--p2 {
+  color: #C77412;
+  font-family: Chilanka;
+  letter-spacing: 0px;
+  font-size: 100%;
+  font-weight: bold;
+  font-size: 1.8em;
+  margin: 0%;
+}
+.menuSelect__menu3 {
+  background-color: #F9F9F9;
+}
+.menuSelect__menu3--p1 {
+  background: linear-gradient(to right, #0431DF, #0887FB);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: Dancing Script;
+  letter-spacing: 0px;
+  font-size: 115%;
+}
+.menuSelect__menu3--p2 {
+  color: #0887FB;
+  font-family: Chilanka;
+  letter-spacing: 0px;
+  font-size: 100%;
+  font-weight: bold;
+  font-size: 1.8em;
+  margin: 0%;
+}
+.menuSelect__menu4 {
+  background-color: #FDFFFD;
+}
+.menuSelect__menu4--p1 {
+  background: linear-gradient(to right, #3D9339, #BFFF7E);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: Caveat;
+  letter-spacing: 0px;
+  font-size: 140%;
+}
+.menuSelect__menu4--p2 {
+  color: #72BF56;
+  font-family: Chilanka;
+  letter-spacing: 0px;
+  font-size: 100%;
+  font-weight: bold;
+  font-size: 1.8em;
+  margin: 0%;
+}
+.menuSelect__btnProch {
+  background-color: #579C87;
+  color: #FDCB46;
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+.menuSelect__btnProch--txt {
+  text-align: center;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: Red Hat Display;
+  letter-spacing: 1px;
+  font-size: 200%;
+}
+
+/* Block Pied de page */
+.footer {
+  display: flex;
+  background-color: #579C87;
+  color: #FDCB46;
+  font-weight: 500;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: Red Hat Display;
+  letter-spacing: 0px;
+  font-size: 150%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.footer__menLeg {
+  margin-left: 10px;
+  flex: 2;
+}
+.footer__contact {
+  margin-right: 10px;
+}
+.footer__menLeg, .footer__contact {
+  margin-bottom: 0%;
+  margin-top: 0%;
+}
+
+/*# sourceMappingURL=mobileFirst_style.css.map */

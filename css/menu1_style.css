@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* Variables */
+/* Mixins */
+/* Maps */
+/* Polices */
+@font-face {
+  font-family: Red Hat Display, sans-serif;
+  src: "Google Font";
+  font-family: Leckerli One, cursive;
+  src: "Google Font";
+  font-family: Chilanka, cursive;
+  src: "Google Font";
+  font-family: Dancing Script, cursive;
+  src: "Google Font";
+  font-family: Lobster Two, cursive;
+  src: "Google Font";
+  font-family: Caveat, cursive;
+  src: "Google Font";
+}
+/* Général */
+html {
+  font-size: 100%;
+  background-color: black;
+}
+
+body {
+  overflow-y: hidden;
+  font-size: 0.8em;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  max-width: 1200px;
+}
+
+html, body {
+  height: auto;
+  min-height: 100vh;
+}
+
+/* Block en tête */
+.header {
+  background-color: #579C87;
+  box-shadow: 0px 1px 3px 0px #579C87;
+}
+.header__title {
+  margin-top: 0%;
+  margin-bottom: 40px;
+  color: #FDCB46;
+  text-align: center;
+  padding: 20px 0%;
+  font-weight: bold;
+  font-family: Red Hat Display;
+  letter-spacing: -2.5px;
+  font-size: 3.2em;
+}
+
+/* Block Pied de page */
+.footer {
+  display: flex;
+  background-color: #579C87;
+  color: #FDCB46;
+  font-weight: 500;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: Red Hat Display;
+  letter-spacing: 0px;
+  font-size: 150%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.footer__menLeg {
+  margin-left: 10px;
+  flex: 2;
+}
+.footer__contact {
+  margin-right: 10px;
+}
+.footer__menLeg, .footer__contact {
+  margin-bottom: 0%;
+  margin-top: 0%;
+}
+
+/*# sourceMappingURL=menu1_style.css.map */

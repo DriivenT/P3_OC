@@ -1,0 +1,46 @@
+/* Variables */
+
+$main-bgcolor: #579C87;
+$main-color: #FDCB46;
+
+/* Mixins */
+
+@mixin font($font, $fontsize: 100%, $letterSp: 0px) {
+    font-family: $font;
+    letter-spacing: $letterSp;
+    font-size: $fontsize;
+}
+
+@mixin fontMenu{
+    @include font(map-get($allFont, fontMenu));
+                font-weight: bold;
+                font-size: 1.8em;
+                margin: 0%;
+}
+
+/* Maps */
+
+$allFont: (
+    fontP: Red Hat Display,
+    fontMenu: Chilanka,
+    fontM1: Leckerli One,
+    fontM2: Lobster Two,
+    fontM3: Dancing Script,
+    fontM4: Caveat
+);
+
+/* Polices */
+@font-face {
+    font-family: Red Hat Display, sans-serif;
+    src:"Google Font";
+    font-family: Leckerli One, cursive;
+    src:"Google Font";
+    font-family: Chilanka, cursive;
+    src:"Google Font";
+    font-family: Dancing Script, cursive;
+    src:"Google Font";
+    font-family: Lobster Two, cursive;
+    src:"Google Font";
+    font-family: Caveat, cursive;
+    src:"Google Font";
+}
