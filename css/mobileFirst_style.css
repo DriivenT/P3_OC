@@ -30,11 +30,16 @@ body {
   background-color: white;
   position: relative;
   max-width: 1200px;
+  padding-bottom: 200px;
 }
 
 html, body {
   height: auto;
   min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* Block en tête */
@@ -58,7 +63,6 @@ html, body {
 .menuSelect {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 10%;
 }
 .menuSelect__menu--shadow {
   box-shadow: 0px 0px 8px -5px #000000;
