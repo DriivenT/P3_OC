@@ -24,17 +24,21 @@ html {
 }
 
 body {
-  overflow-y: hidden;
   font-size: 0.8em;
   margin: auto;
   background-color: white;
   position: relative;
   max-width: 1200px;
+  padding-bottom: 20%;
 }
 
 html, body {
   height: auto;
   min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* Block en tête */
@@ -44,7 +48,7 @@ html, body {
 }
 .header__title {
   margin-top: 0%;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: #FDCB46;
   text-align: center;
   padding: 20px 0%;
@@ -52,6 +56,55 @@ html, body {
   font-family: Red Hat Display;
   letter-spacing: -2.5px;
   font-size: 3.2em;
+}
+
+/* Block Menu */
+h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.menu {
+  background-color: #FCDFDB;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 8px -5px #000000;
+}
+.menu__note {
+  font-size: 3em;
+  padding-top: 30px;
+  text-align: center;
+  background: linear-gradient(to right, #F15360, #F78F6A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-right: auto;
+  margin-left: auto;
+}
+.menu h3 {
+  color: #3C1218;
+  font-family: Leckerli One;
+  letter-spacing: 0px;
+  font-size: 125%;
+  text-align: center;
+  margin: 0%;
+}
+.menu__name {
+  color: #3C1218;
+  text-align: center;
+  font-family: Chilanka;
+  letter-spacing: 0px;
+  font-size: 200%;
+}
+.menu__categorie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* Block Pied de page */

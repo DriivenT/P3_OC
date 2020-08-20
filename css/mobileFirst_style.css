@@ -24,13 +24,12 @@ html {
 }
 
 body {
-  overflow-y: hidden;
   font-size: 0.8em;
   margin: auto;
   background-color: white;
   position: relative;
   max-width: 1200px;
-  padding-bottom: 200px;
+  padding-bottom: 20%;
 }
 
 html, body {
@@ -176,7 +175,6 @@ html, body {
   padding-right: 8%;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 40px;
   border-radius: 10px;
 }
 .menuSelect__btnProch--txt {
