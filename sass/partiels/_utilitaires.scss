@@ -19,6 +19,18 @@ $main-colorM1: #3C1218;
                 margin: 0%;
 }
 
+@mixin degrade($color1: black, $color2: grey){
+    background: linear-gradient(to right, $color1, $color2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin flex($direction: row){
+    display: flex;
+    flex-direction: $direction;
+}
+
 /* Maps */
 
 $allFont: (

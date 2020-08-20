@@ -49,7 +49,6 @@ html, body {
 .header__title {
   margin-top: 0%;
   margin-bottom: 30px;
-  color: #FDCB46;
   text-align: center;
   padding: 20px 0%;
   font-weight: bold;
@@ -58,19 +57,24 @@ html, body {
   font-size: 3.2em;
 }
 
+.header a {
+  text-decoration: none;
+  color: #FDCB46;
+}
+
 /* Block Menu */
 h2 {
   text-align: center;
   font-size: 2em;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .menu {
   background-color: #FCDFDB;
   margin-left: 5%;
   margin-right: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 0px 8px -5px #000000;
@@ -90,26 +94,54 @@ h2 {
   color: #3C1218;
   font-family: Leckerli One;
   letter-spacing: 0px;
-  font-size: 125%;
+  font-size: 225%;
   text-align: center;
   margin: 0%;
+  margin-bottom: 7%;
 }
-.menu__name {
+.menu__categorieName {
   color: #3C1218;
   text-align: center;
   font-family: Chilanka;
   letter-spacing: 0px;
   font-size: 200%;
+  margin: 0%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-weight: bold;
 }
-.menu__categorie {
+.menu .plat1, .menu .plat2, .menu .plat3, .menu .plat4 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.menu .plat--justify {
+  text-align: justify;
+}
+.menu .plat--margeGras {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.menu h4 {
+  text-align: center;
+  color: #3C1218;
+  font-family: Leckerli One;
+  letter-spacing: 0px;
+  font-size: 1.7em;
+}
+.menu .smallNote {
+  font-size: 1.5em;
+  margin-right: 10px;
+  background: linear-gradient(to right, #F15360, #F78F6A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /* Block Pied de page */
 .footer {
   display: flex;
+  flex-direction: row;
   background-color: #579C87;
   color: #FDCB46;
   font-weight: 500;
