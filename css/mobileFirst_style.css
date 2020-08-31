@@ -42,38 +42,30 @@ html, body {
 }
 
 /* Block en tête */
-.header {
+header {
   background-color: #579C87;
   box-shadow: 0px 1px 3px 0px #579C87;
-}
-.header__title {
-  margin-top: 0%;
   margin-bottom: 40px;
-  text-align: center;
-  padding: 20px 0%;
-  font-weight: bold;
-  font-family: Red Hat Display;
-  letter-spacing: -2.5px;
-  font-size: 3.2em;
 }
-
-.header a {
-  text-decoration: none;
-  color: #FDCB46;
+header img {
+  max-width: 75%;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  margin-right: 12.5%;
+  margin-left: 12.5%;
 }
 
 /* Block Menu */
 .menuSelect {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 .menuSelect__menu--shadow {
   box-shadow: 0px 0px 8px -5px #000000;
 }
 .menuSelect__menu--property {
-  min-width: 35%;
-  min-height: 230px;
+  min-width: 60%;
+  min-height: 250px;
   margin: auto;
   margin-bottom: 40px;
   font-size: 1.1em;
@@ -87,7 +79,7 @@ html, body {
   background-color: #FCDFDB;
 }
 .menuSelect__menu1--note {
-  font-size: 2em;
+  font-size: 2.5em;
   background: linear-gradient(to right, #F15360, #F78F6A);
   background-clip: text;
   -webkit-background-clip: text;
@@ -97,10 +89,12 @@ html, body {
   color: #3C1218;
 }
 .menuSelect__menu1--p1 {
-  font-family: Leckerli One;
+  font-family: Devonshire;
   letter-spacing: 0px;
-  font-size: 110%;
-  margin-top: 0%;
+  font-size: 175%;
+  margin: 0%;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 .menuSelect__menu1--p2 {
   font-family: Chilanka;
@@ -120,7 +114,7 @@ html, body {
   color: transparent;
   font-family: Lobster Two;
   letter-spacing: 0px;
-  font-size: 110%;
+  font-size: 125%;
 }
 .menuSelect__menu2--p2 {
   color: #C77412;
@@ -141,7 +135,7 @@ html, body {
   color: transparent;
   font-family: Dancing Script;
   letter-spacing: 0px;
-  font-size: 115%;
+  font-size: 135%;
 }
 .menuSelect__menu3--p2 {
   color: #0887FB;
@@ -162,7 +156,7 @@ html, body {
   color: transparent;
   font-family: Caveat;
   letter-spacing: 0px;
-  font-size: 140%;
+  font-size: 160%;
 }
 .menuSelect__menu4--p2 {
   color: #72BF56;
@@ -178,6 +172,7 @@ html, body {
   color: #FDCB46;
   padding-left: 8%;
   padding-right: 8%;
+  margin-bottom: 10px;
   margin-right: auto;
   margin-left: auto;
   border-radius: 10px;
@@ -205,7 +200,7 @@ html, body {
   font-family: Red Hat Display;
   letter-spacing: 0px;
   font-size: 150%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;

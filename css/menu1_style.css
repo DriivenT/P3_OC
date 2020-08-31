@@ -42,31 +42,27 @@ html, body {
 }
 
 /* Block en tête */
-.header {
+header {
   background-color: #579C87;
   box-shadow: 0px 1px 3px 0px #579C87;
 }
-.header__title {
-  margin-top: 0%;
-  margin-bottom: 30px;
-  text-align: center;
-  padding: 20px 0%;
-  font-weight: bold;
-  font-family: Red Hat Display;
-  letter-spacing: -2.5px;
-  font-size: 3.2em;
-}
-
-.header a {
-  text-decoration: none;
-  color: #FDCB46;
+header img {
+  max-width: 75%;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  margin-right: 12.5%;
+  margin-left: 12.5%;
 }
 
 /* Block Menu */
-h2 {
+h1 {
   text-align: center;
-  font-size: 2em;
+  padding-top: 10px;
   margin-bottom: 15px;
+  color: #353535;
+  font-family: Roboto;
+  letter-spacing: 0px;
+  font-size: 1.8em;
 }
 
 .menu {
@@ -90,30 +86,53 @@ h2 {
   margin-right: auto;
   margin-left: auto;
 }
-.menu h3 {
+.menu h2 {
   color: #3C1218;
-  font-family: Leckerli One;
-  letter-spacing: 0px;
+  font-family: Devonshire;
+  letter-spacing: 0.5px;
   font-size: 225%;
   text-align: center;
   margin: 0%;
   margin-bottom: 7%;
+  white-space: nowrap;
 }
-.menu__categorieName {
+.menu img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.menu__categorie__block {
+  display: flex;
+  flex-direction: row;
+}
+.menu__categorie__trait {
+  padding-top: 5%;
+}
+.menu__categorie__name {
+  display: flex;
+  flex-direction: row;
   color: #3C1218;
   text-align: center;
+  justify-content: center;
   font-family: Chilanka;
   letter-spacing: 0px;
-  font-size: 200%;
-  margin: 0%;
-  margin-bottom: 5%;
+  font-size: 150%;
+  /*margin-right: 5%;
+  margin-left: 5%;*/
+  margin-bottom: 2%;
   margin-top: 5%;
+  padding-right: 10px;
+  padding-left: 10px;
   font-weight: bold;
+  white-space: nowrap;
+  width: 300px;
 }
 .menu .plat1, .menu .plat2, .menu .plat3, .menu .plat4 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-family: Mali;
+  letter-spacing: 0px;
+  font-size: 0.8em;
 }
 .menu .plat--justify {
   text-align: justify;
@@ -122,10 +141,15 @@ h2 {
   margin-left: 20px;
   font-weight: bold;
 }
-.menu h4 {
+.menu__dessert {
+  font-family: Mali;
+  letter-spacing: 0px;
+  font-size: 0.8em;
+}
+.menu h3 {
   text-align: center;
   color: #3C1218;
-  font-family: Leckerli One;
+  font-family: Devonshire;
   letter-spacing: 0px;
   font-size: 1.7em;
 }
@@ -150,7 +174,7 @@ h2 {
   font-family: Red Hat Display;
   letter-spacing: 0px;
   font-size: 150%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
