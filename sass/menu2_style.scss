@@ -51,29 +51,18 @@ h1{
 }
 
 .menu{
-    background-color: $bgM1;
+    background-color: $bgM2;
     margin-left: 5%;
     margin-right: 5%;
     padding-left: 10%;
     padding-right: 10%;
     @include flex(column);
-    box-shadow: 0px 0px 8px -5px black;
-
-    &__note{
-        font-size: 3em;
-        padding-top: 30px;
-        text-align: center;
-        @include degrade(#F15360, #F78F6A);
-        margin-right: auto;
-        margin-left: auto;
-    }
+    box-shadow: 0px 0px 8px -5px #000000;
 
     h2{
-        color: $main-colorM1;
-        @include font(map-get($allFont, fontM1), 225%, 0.5px);
+        @include degrade(#C77412, #6E4CCC);
+        @include font(map-get($allFont, fontM2), 200%);
         text-align: center;
-        margin: 0%;
-        margin-bottom: 7%;
         white-space: nowrap;
     }
 
@@ -92,22 +81,38 @@ h1{
             padding-top: 5%;
         }
 
-        &__name{
-            @include categorieProp($main-colorM1, 150%);
+        &__entree{
+            @include categorieProp(#C77412, 125%);
+        }
+
+        &__plat{
+            @include categorieProp(#A56799, 125%);
+        }
+
+        &__dessert{
+            @include categorieProp(#6E4CCC, 125%);
         }
     }
 
-    .plat{
+    &__entree{
+        color: #C77412;
+    }
+
+    &__plat{
+        color: #A56799;
+    }
+
+    &__entree, &__plat{
         &1, &2, &3, &4{
             @include flex;
             justify-content: space-between;
             @include font(map-get($allFont, fontPlatM1), 0.8em);
         }
-
+    
         &--justify{
             text-align: justify;
         }
-
+    
         &--margeGras{
             margin-left: 20px;
             font-weight: bold;
@@ -116,18 +121,13 @@ h1{
 
     &__dessert{
         @include font(map-get($allFont, fontPlatM1), 0.8em);
+        color: #6E4CCC;
     }
 
     h3{
         text-align: center;
-        color: $main-colorM1;
-        @include font(map-get($allFont, fontM1), 1.7em);
-    }
-
-    .smallNote{
-        font-size: 1.5em;
-        margin-right: 10px;
-        @include degrade(#F15360, #F78F6A);
+        @include degrade(#C77412, #6E4CCC);
+        @include font(map-get($allFont, fontM2), 1.7em);
     }
 }
 

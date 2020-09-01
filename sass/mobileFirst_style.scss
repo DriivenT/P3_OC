@@ -25,39 +25,33 @@ html, body{
 }
 
 /* Block en tête */
-.header{
+header{
     background-color: $main-bgcolor;
     box-shadow: 0px 1px 3px 0px $main-bgcolor;
+    margin-bottom: 40px;
 
-    &__title{
-        margin-top: 0%;
-        margin-bottom: 40px;
-        text-align: center;
-        padding: 20px 0%;
-        font-weight: bold;
-        @include font(map-get($allFont, fontP), 3.2em, -2.5px);
+    & img{
+        max-width: 75%;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        margin-right: 12.5%;
+        margin-left: 12.5%;
     }
-}
-
-.header a{
-    text-decoration: none;
-    color: $main-color;
 }
 
 /* Block Menu */
 
 .menuSelect{
-    @include flex;
-    flex-wrap: wrap;
+    @include flex(column);
 
     &__menu{
         &--shadow{
-            box-shadow: 0px 0px 8px -5px #000000;
+            box-shadow: 0px 0px 8px -5px black;
         }
 
         &--property{
-            min-width: 35%;
-            min-height: 230px;
+            min-width: 60%;
+            min-height: 250px;
             margin: auto;
             margin-bottom: 40px;
             font-size: 1.1em;
@@ -68,20 +62,22 @@ html, body{
         }
 
         &1{
-            background-color: #FCDFDB;
+            background-color: $bgM1;
 
             &--note{
-                font-size: 2em;
+                font-size: 2.5em;
                 @include degrade(#F15360, #F78F6A);
             }
 
             &--p1, &--p2{
-                color: #3C1218;
+                color: $main-colorM1;
             }
 
             &--p1{
-                @include font(map-get($allFont, fontM1), 110%);
-                margin-top: 0%;
+                @include font(map-get($allFont, fontM1), 175%);
+                margin: 0%;
+                margin-top: 10px;
+                margin-bottom: 5px;
             }
             &--p2{
                 @include fontMenu;
@@ -89,11 +85,11 @@ html, body{
 
         }
         &2{
-            background-color: #FFF5FE;
+            background-color: $bgM2;
 
             &--p1{
-                @include degrade(#C77412, #935EFC);
-                @include font(map-get($allFont, fontM2), 110%);
+                @include degrade(#C77412, #6E4CCC);
+                @include font(map-get($allFont, fontM2), 125%);
             }
             &--p2{
                 color: #C77412;
@@ -101,11 +97,11 @@ html, body{
             }
         }
         &3{
-            background-color: #F9F9F9;
+            background-color: $bgM3;
 
             &--p1{
                 @include degrade(#0431DF, #0887FB);
-                @include font(map-get($allFont, fontM3), 115%);
+                @include font(map-get($allFont, fontM3), 135%);
             }
             &--p2{
                 color: #0887FB;
@@ -113,11 +109,11 @@ html, body{
             }
         }
         &4{
-            background-color: #FDFFFD;
+            background-color: $bgM4;
 
             &--p1{
                 @include degrade(#3D9339, #BFFF7E);
-                @include font(map-get($allFont, fontM4), 140%);
+                @include font(map-get($allFont, fontM4), 160%);
             }
             &--p2{
                 color: #72BF56;
@@ -131,6 +127,7 @@ html, body{
         color: $main-color;
         padding-left: 8%;
         padding-right: 8%;
+        margin-bottom: 10px;
         margin-right: auto;
         margin-left: auto;
         border-radius: 10px;
@@ -155,18 +152,25 @@ html, body{
     font-weight: 500;
     padding-top: 15px;
     padding-bottom: 15px;
-    @include font(map-get($allFont, fontP), 150%);
-    position: absolute;
+    @include font(map-get($allFont, fontP), 125%);
+    text-decoration: none;
+    margin-right: auto;
+    position: fixed;
     bottom: 0;
-    left: 0;
     right: 0;
-
+    left: 0;
+    
     &__menLeg{
         margin-left: 10px;
         flex: 2;
     }
     &__contact{
         margin-right: 10px;
+    }
+
+    & a{
+        text-decoration: none;
+        color: $main-color;
     }
 
     &__menLeg, &__contact{

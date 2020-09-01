@@ -4,7 +4,7 @@
   "description": "projet 3 OC",
   "main": "index.js",
   "scripts": {
-    "sass" : "sass --watch ./sass/mobileFirst_style.scss:./css/mobileFirst_style.css ./sass/menu1_style.scss:./css/menu1_style.css"
+    "sass" : "sass --watch ./sass/mobileFirst_style.scss:./css/mobileFirst_style.css ./sass/menu1_style.scss:./css/menu1_style.css ./sass/menu2_style.scss:./css/menu2_style.css"
   },
   "author": "Bretinière Tom",
   "license": "ISC"

@@ -3,6 +3,10 @@
 $main-bgcolor: #579C87;
 $main-color: #FDCB46;
 $main-colorM1: #3C1218;
+$bgM1: #FCDFDB;
+$bgM2: #FFF5FE;
+$bgM3: #F9F9F9;
+$bgM4: #FDFFFD;
 
 /* Mixins */
 
@@ -31,15 +35,32 @@ $main-colorM1: #3C1218;
     flex-direction: $direction;
 }
 
+@mixin categorieProp($color, $size){
+    @include flex;
+    color: $color;
+    text-align: center;
+    justify-content: center;
+    @include font(map-get($allFont, fontMenu), $size);
+    margin-bottom: 2%;
+    margin-top: 5%;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+    width: 300px;
+}
+
 /* Maps */
 
 $allFont: (
     fontP: Red Hat Display,
     fontMenu: Chilanka,
-    fontM1: Leckerli One,
+    fontM1: Devonshire,
     fontM2: Lobster Two,
     fontM3: Dancing Script,
-    fontM4: Caveat
+    fontM4: Caveat,
+    fontPlatM1: Mali,
+    fontH1: Roboto
 );
 
 /* Polices */
