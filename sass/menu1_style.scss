@@ -93,7 +93,7 @@ h1{
         }
 
         &__name{
-            @include categorieProp($main-colorM1, 150%);
+            @include categorieProp($main-colorM1, fontTitleM1, 150%);
         }
     }
 
@@ -140,7 +140,7 @@ h1{
     font-weight: 500;
     padding-top: 15px;
     padding-bottom: 15px;
-    @include font(map-get($allFont, fontP), 125%);
+    @include font(map-get($allFont, fontFooter), 125%);
     position: fixed;
     bottom: 0;
     left: 0;

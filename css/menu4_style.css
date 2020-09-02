@@ -4,17 +4,27 @@
 /* Maps */
 /* Polices */
 @font-face {
-  font-family: Red Hat Display, sans-serif;
-  src: "Google Font";
-  font-family: Leckerli One, cursive;
-  src: "Google Font";
+  font-family: Roboto, cursive;
+  src: "GoogleFont";
   font-family: Chilanka, cursive;
   src: "Google Font";
-  font-family: Dancing Script, cursive;
+  font-family: Devonshire, cursive;
   src: "Google Font";
   font-family: Lobster Two, cursive;
   src: "Google Font";
+  font-family: Dancing Script, cursive;
+  src: "Google Font";
   font-family: Caveat, cursive;
+  src: "Google Font";
+  font-family: Mali, cursive;
+  src: "Google Font";
+  font-family: Roboto Slab, cursive;
+  src: "Google Font";
+  font-family: Kalam, cursive;
+  src: "Google Font";
+  font-family: Architects Daughter, cursive;
+  src: "Google Font";
+  font-family: Red Hat Display, sans-serif;
   src: "Google Font";
 }
 /* Général */
@@ -103,7 +113,7 @@ h1 {
   color: inherit;
   text-align: center;
   justify-content: center;
-  font-family: Chilanka;
+  font-family: Architects Daughter;
   letter-spacing: 0px;
   font-size: 125%;
   margin-bottom: 2%;
@@ -120,7 +130,7 @@ h1 {
   color: inherit;
   text-align: center;
   justify-content: center;
-  font-family: Chilanka;
+  font-family: Architects Daughter;
   letter-spacing: 0px;
   font-size: 125%;
   margin-bottom: 2%;
@@ -137,7 +147,7 @@ h1 {
   color: inherit;
   text-align: center;
   justify-content: center;
-  font-family: Chilanka;
+  font-family: Architects Daughter;
   letter-spacing: 0px;
   font-size: 125%;
   margin-bottom: 2%;
@@ -152,9 +162,9 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: Mali;
+  font-family: Architects Daughter;
   letter-spacing: 0px;
-  font-size: 0.8em;
+  font-size: 1em;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -166,7 +176,7 @@ h1 {
   font-weight: bold;
 }
 .menu__dessert {
-  font-family: Mali;
+  font-family: Architects Daughter;
   letter-spacing: 0px;
   font-size: 0.9em;
 }

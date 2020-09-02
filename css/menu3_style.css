@@ -4,17 +4,27 @@
 /* Maps */
 /* Polices */
 @font-face {
-  font-family: Red Hat Display, sans-serif;
-  src: "Google Font";
-  font-family: Leckerli One, cursive;
-  src: "Google Font";
+  font-family: Roboto, cursive;
+  src: "GoogleFont";
   font-family: Chilanka, cursive;
   src: "Google Font";
-  font-family: Dancing Script, cursive;
+  font-family: Devonshire, cursive;
   src: "Google Font";
   font-family: Lobster Two, cursive;
   src: "Google Font";
+  font-family: Dancing Script, cursive;
+  src: "Google Font";
   font-family: Caveat, cursive;
+  src: "Google Font";
+  font-family: Mali, cursive;
+  src: "Google Font";
+  font-family: Roboto Slab, cursive;
+  src: "Google Font";
+  font-family: Kalam, cursive;
+  src: "Google Font";
+  font-family: Architects Daughter, cursive;
+  src: "Google Font";
+  font-family: Red Hat Display, sans-serif;
   src: "Google Font";
 }
 /* Général */
@@ -103,7 +113,7 @@ h1 {
   color: inherit;
   text-align: center;
   justify-content: center;
-  font-family: Chilanka;
+  font-family: Kalam;
   letter-spacing: 0px;
   font-size: 125%;
   margin-bottom: 2%;
@@ -113,6 +123,7 @@ h1 {
   font-weight: bold;
   white-space: nowrap;
   width: 300px;
+  font-weight: initial;
 }
 .menu__categorie__plat {
   display: flex;
@@ -120,7 +131,7 @@ h1 {
   color: inherit;
   text-align: center;
   justify-content: center;
-  font-family: Chilanka;
+  font-family: Kalam;
   letter-spacing: 0px;
   font-size: 125%;
   margin-bottom: 2%;
@@ -130,6 +141,7 @@ h1 {
   font-weight: bold;
   white-space: nowrap;
   width: 300px;
+  font-weight: initial;
 }
 .menu__categorie__dessert {
   display: flex;
@@ -137,7 +149,7 @@ h1 {
   color: inherit;
   text-align: center;
   justify-content: center;
-  font-family: Chilanka;
+  font-family: Kalam;
   letter-spacing: 0px;
   font-size: 125%;
   margin-bottom: 2%;
@@ -147,12 +159,13 @@ h1 {
   font-weight: bold;
   white-space: nowrap;
   width: 300px;
+  font-weight: initial;
 }
 .menu__entree1, .menu__entree2, .menu__entree3, .menu__plat1, .menu__plat2, .menu__plat3, .menu__dessert1, .menu__dessert2, .menu__dessert3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: Mali;
+  font-family: Kalam;
   letter-spacing: 0px;
   font-size: 0.8em;
   padding-left: 5%;
@@ -166,7 +179,7 @@ h1 {
   font-weight: bold;
 }
 .menu__dessert {
-  font-family: Mali;
+  font-family: Kalam;
   letter-spacing: 0px;
   font-size: 0.9em;
 }

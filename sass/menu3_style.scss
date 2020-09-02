@@ -82,15 +82,18 @@ h1{
         }
 
         &__entree{
-            @include categorieProp(inherit, 125%);
+            @include categorieProp(inherit, fontTitlePlatM3, 125%);
+            font-weight: initial;
         }
 
         &__plat{
-            @include categorieProp(inherit, 125%);
+            @include categorieProp(inherit, fontTitlePlatM3, 125%);
+            font-weight: initial;
         }
 
         &__dessert{
-            @include categorieProp(inherit, 125%);
+            @include categorieProp(inherit, fontTitlePlatM3, 125%);
+            font-weight: initial;
         }
     }
 
@@ -98,7 +101,7 @@ h1{
         &1, &2, &3{
             @include flex;
             justify-content: space-between;
-            @include font(map-get($allFont, fontPlatM1), 0.8em);
+            @include font(map-get($allFont, fontTitlePlatM3), 0.8em);
             padding-left: 5%;
             padding-right: 5%;
         }
@@ -114,7 +117,7 @@ h1{
     }
 
     &__dessert{
-        @include font(map-get($allFont, fontPlatM1), 0.9em);
+        @include font(map-get($allFont, fontTitlePlatM3), 0.9em);
     }
 
     h3{
@@ -133,7 +136,7 @@ h1{
     font-weight: 500;
     padding-top: 15px;
     padding-bottom: 15px;
-    @include font(map-get($allFont, fontP), 125%);
+    @include font(map-get($allFont, fontFooter), 125%);
     position: fixed;
     bottom: 0;
     left: 0;

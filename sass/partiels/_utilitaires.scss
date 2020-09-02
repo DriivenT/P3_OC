@@ -16,8 +16,8 @@ $bgM4: #FDFFFD;
     font-size: $fontsize;
 }
 
-@mixin fontMenu{
-    @include font(map-get($allFont, fontMenu));
+@mixin fontTitleM1{
+    @include font(map-get($allFont, fontTitleM1));
                 font-weight: bold;
                 font-size: 1.8em;
                 margin: 0%;
@@ -35,12 +35,12 @@ $bgM4: #FDFFFD;
     flex-direction: $direction;
 }
 
-@mixin categorieProp($color: black, $size){
+@mixin categorieProp($color: black, $font, $size){
     @include flex;
     color: $color;
     text-align: center;
     justify-content: center;
-    @include font(map-get($allFont, fontMenu), $size);
+    @include font(map-get($allFont, $font), $size);
     margin-bottom: 2%;
     margin-top: 5%;
     padding-right: 10px;
@@ -53,28 +53,41 @@ $bgM4: #FDFFFD;
 /* Maps */
 
 $allFont: (
-    fontP: Red Hat Display,
-    fontMenu: Chilanka,
+    fontH1: Roboto,
     fontM1: Devonshire,
+    fontTitleM1: Chilanka,
+    fontPlatM1: Mali,
     fontM2: Lobster Two,
     fontM3: Dancing Script,
     fontM4: Caveat,
-    fontPlatM1: Mali,
-    fontH1: Roboto
+    fontTitlePlatM2: Roboto Slab,
+    fontTitlePlatM3: Kalam,
+    fontTitlePlatM4: Architects Daughter,
+    fontFooter: Red Hat Display
 );
 
 /* Polices */
 @font-face {
-    font-family: Red Hat Display, sans-serif;
-    src:"Google Font";
-    font-family: Leckerli One, cursive;
-    src:"Google Font";
+    font-family: Roboto, cursive;
+    src:"GoogleFont";
     font-family: Chilanka, cursive;
     src:"Google Font";
-    font-family: Dancing Script, cursive;
+    font-family: Devonshire, cursive;
     src:"Google Font";
     font-family: Lobster Two, cursive;
     src:"Google Font";
+    font-family: Dancing Script, cursive;
+    src:"Google Font";
     font-family: Caveat, cursive;
     src:"Google Font";
+    font-family: Mali, cursive;
+    src:"Google Font";
+    font-family: Roboto Slab, cursive;
+    src:"Google Font";
+    font-family: Kalam, cursive;
+    src:"Google Font";
+    font-family: Architects Daughter, cursive;
+    src:"Google Font";
+    font-family: Red Hat Display, sans-serif;
+    src: "Google Font";
 }

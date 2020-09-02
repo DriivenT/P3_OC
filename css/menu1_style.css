@@ -4,17 +4,27 @@
 /* Maps */
 /* Polices */
 @font-face {
-  font-family: Red Hat Display, sans-serif;
-  src: "Google Font";
-  font-family: Leckerli One, cursive;
-  src: "Google Font";
+  font-family: Roboto, cursive;
+  src: "GoogleFont";
   font-family: Chilanka, cursive;
   src: "Google Font";
-  font-family: Dancing Script, cursive;
+  font-family: Devonshire, cursive;
   src: "Google Font";
   font-family: Lobster Two, cursive;
   src: "Google Font";
+  font-family: Dancing Script, cursive;
+  src: "Google Font";
   font-family: Caveat, cursive;
+  src: "Google Font";
+  font-family: Mali, cursive;
+  src: "Google Font";
+  font-family: Roboto Slab, cursive;
+  src: "Google Font";
+  font-family: Kalam, cursive;
+  src: "Google Font";
+  font-family: Architects Daughter, cursive;
+  src: "Google Font";
+  font-family: Red Hat Display, sans-serif;
   src: "Google Font";
 }
 /* Général */
