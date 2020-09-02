@@ -1,0 +1,159 @@
+@import "partiels/utilitaires";
+
+
+
+/* Général */
+html{ 
+    font-size: 100%;
+    background-color: black;
+}
+
+body{
+    font-size: .8em;
+    margin: auto;
+    background-color: white;
+    position: relative;
+    max-width: 1200px;
+    padding-bottom: 20%;
+}
+
+html, body{
+    height: auto;
+    min-height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* Block en tête */
+header{
+    background-color: $main-bgcolor;
+    box-shadow: 0px 1px 3px 0px $main-bgcolor;
+
+    & img{
+        max-width: 75%;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        margin-right: 12.5%;
+        margin-left: 12.5%;
+    }
+}
+
+/* Block Menu */
+
+h1{
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    color: #353535;
+    @include font(map-get($allFont, fontH1), 1.8em);
+}
+
+.menu{
+    background-color: $bgM4;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    @include flex(column);
+    box-shadow: 0px 0px 8px -5px #000000;
+
+    h2{
+        @include degrade(#3D9339, #BFFF7E);
+        @include font(map-get($allFont, fontM3), 200%);
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    &__categorie{
+        
+        &__block{
+            @include flex(row);
+        }
+
+        &__trait{
+            padding-top: 5%;
+        }
+
+        &__entree{
+            @include categorieProp(inherit, 125%);
+        }
+
+        &__plat{
+            @include categorieProp(inherit, 125%);
+        }
+
+        &__dessert{
+            @include categorieProp(inherit, 125%);
+        }
+    }
+
+    &__entree, &__plat, &__dessert{
+        &1, &2, &3{
+            @include flex;
+            justify-content: space-between;
+            @include font(map-get($allFont, fontPlatM1), 0.8em);
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    
+        &--justify{
+            text-align: justify;
+        }
+    
+        &--margeGras{
+            margin-left: 20px;
+            font-weight: bold;
+        }
+    }
+
+    &__dessert{
+        @include font(map-get($allFont, fontPlatM1), 0.9em);
+    }
+
+    h3{
+        text-align: center;
+        @include degrade(#3D9339, #BFFF7E);
+        @include font(map-get($allFont, fontM3), 1.7em);
+    }
+}
+
+/* Block Pied de page */
+
+.footer{
+    @include flex;
+    background-color: $main-bgcolor;
+    color: $main-color;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    @include font(map-get($allFont, fontP), 125%);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    &__menLeg{
+        margin-left: 10px;
+        flex: 2;
+    }
+    &__contact{
+        margin-right: 10px;
+    }
+
+    & a{
+        text-decoration: none;
+        color: $main-color;
+    }
+
+    &__menLeg, &__contact{
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+}
