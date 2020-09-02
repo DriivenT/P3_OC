@@ -51,7 +51,7 @@ h1{
 }
 
 .menu{
-    background-color: $bgM2;
+    background-color: $bgM3;
     margin-left: 5%;
     margin-right: 5%;
     padding-left: 5%;
@@ -60,8 +60,8 @@ h1{
     box-shadow: 0px 0px 8px -5px #000000;
 
     h2{
-        @include degrade(#C77412, #6E4CCC);
-        @include font(map-get($allFont, fontM2), 200%);
+        @include degrade(#0431DF, #0887FB);
+        @include font(map-get($allFont, fontM3), 200%);
         text-align: center;
         white-space: nowrap;
     }
@@ -82,34 +82,19 @@ h1{
         }
 
         &__entree{
-            @include categorieProp(#C77412, 125%);
+            @include categorieProp(inherit, 125%);
         }
 
         &__plat{
-            @include categorieProp(#A56799, 125%);
+            @include categorieProp(inherit, 125%);
         }
 
         &__dessert{
-            @include categorieProp(#6E4CCC, 125%);
+            @include categorieProp(inherit, 125%);
         }
     }
 
-    &__entree{
-        color: #C77412;
-    }
-
-    &__plat{
-        color: #A56799;
-    }
-    
-    &__dessert{
-        @include font(map-get($allFont, fontPlatM1), 0.8em);
-        color: #6E4CCC;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    &__entree, &__plat{
+    &__entree, &__plat, &__dessert{
         &1, &2, &3{
             @include flex;
             justify-content: space-between;
@@ -128,10 +113,14 @@ h1{
         }
     }
 
+    &__dessert{
+        @include font(map-get($allFont, fontPlatM1), 0.9em);
+    }
+
     h3{
         text-align: center;
-        @include degrade(#C77412, #6E4CCC);
-        @include font(map-get($allFont, fontM2), 1.7em);
+        @include degrade(#0431DF, #0887FB);
+        @include font(map-get($allFont, fontM3), 1.7em);
     }
 }
 

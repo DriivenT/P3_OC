@@ -35,7 +35,7 @@ $bgM4: #FDFFFD;
     flex-direction: $direction;
 }
 
-@mixin categorieProp($color, $size){
+@mixin categorieProp($color: black, $size){
     @include flex;
     color: $color;
     text-align: center;

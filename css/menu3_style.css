@@ -66,7 +66,7 @@ h1 {
 }
 
 .menu {
-  background-color: #FFF5FE;
+  background-color: #F9F9F9;
   margin-left: 5%;
   margin-right: 5%;
   padding-left: 5%;
@@ -76,11 +76,11 @@ h1 {
   box-shadow: 0px 0px 8px -5px #000000;
 }
 .menu h2 {
-  background: linear-gradient(to right, #C77412, #6E4CCC);
+  background: linear-gradient(to right, #0431DF, #0887FB);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-family: Lobster Two;
+  font-family: Dancing Script;
   letter-spacing: 0px;
   font-size: 200%;
   text-align: center;
@@ -100,7 +100,7 @@ h1 {
 .menu__categorie__entree {
   display: flex;
   flex-direction: row;
-  color: #C77412;
+  color: inherit;
   text-align: center;
   justify-content: center;
   font-family: Chilanka;
@@ -117,7 +117,7 @@ h1 {
 .menu__categorie__plat {
   display: flex;
   flex-direction: row;
-  color: #A56799;
+  color: inherit;
   text-align: center;
   justify-content: center;
   font-family: Chilanka;
@@ -134,7 +134,7 @@ h1 {
 .menu__categorie__dessert {
   display: flex;
   flex-direction: row;
-  color: #6E4CCC;
+  color: inherit;
   text-align: center;
   justify-content: center;
   font-family: Chilanka;
@@ -148,21 +148,7 @@ h1 {
   white-space: nowrap;
   width: 300px;
 }
-.menu__entree {
-  color: #C77412;
-}
-.menu__plat {
-  color: #A56799;
-}
-.menu__dessert {
-  font-family: Mali;
-  letter-spacing: 0px;
-  font-size: 0.8em;
-  color: #6E4CCC;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-.menu__entree1, .menu__entree2, .menu__entree3, .menu__plat1, .menu__plat2, .menu__plat3 {
+.menu__entree1, .menu__entree2, .menu__entree3, .menu__plat1, .menu__plat2, .menu__plat3, .menu__dessert1, .menu__dessert2, .menu__dessert3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -172,20 +158,25 @@ h1 {
   padding-left: 5%;
   padding-right: 5%;
 }
-.menu__entree--justify, .menu__plat--justify {
+.menu__entree--justify, .menu__plat--justify, .menu__dessert--justify {
   text-align: justify;
 }
-.menu__entree--margeGras, .menu__plat--margeGras {
+.menu__entree--margeGras, .menu__plat--margeGras, .menu__dessert--margeGras {
   margin-left: 20px;
   font-weight: bold;
 }
+.menu__dessert {
+  font-family: Mali;
+  letter-spacing: 0px;
+  font-size: 0.9em;
+}
 .menu h3 {
   text-align: center;
-  background: linear-gradient(to right, #C77412, #6E4CCC);
+  background: linear-gradient(to right, #0431DF, #0887FB);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-family: Lobster Two;
+  font-family: Dancing Script;
   letter-spacing: 0px;
   font-size: 1.7em;
 }
@@ -223,4 +214,4 @@ h1 {
   margin-top: 0%;
 }
 
-/*# sourceMappingURL=menu2_style.css.map */
+/*# sourceMappingURL=menu3_style.css.map */
