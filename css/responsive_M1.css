@@ -1,0 +1,73 @@
+/* Variables */
+/* Mixins */
+/* Maps */
+/* Polices */
+@font-face {
+  font-family: Roboto, cursive;
+  src: "GoogleFont";
+  font-family: Chilanka, cursive;
+  src: "Google Font";
+  font-family: Devonshire, cursive;
+  src: "Google Font";
+  font-family: Lobster Two, cursive;
+  src: "Google Font";
+  font-family: Dancing Script, cursive;
+  src: "Google Font";
+  font-family: Caveat, cursive;
+  src: "Google Font";
+  font-family: Mali, cursive;
+  src: "Google Font";
+  font-family: Roboto Slab, cursive;
+  src: "Google Font";
+  font-family: Kalam, cursive;
+  src: "Google Font";
+  font-family: Architects Daughter, cursive;
+  src: "Google Font";
+  font-family: Red Hat Display, sans-serif;
+  src: "Google Font";
+}
+/* Keyframes */
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+@keyframes pointSuspension {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 1em;
+    padding-bottom: 10%;
+  }
+
+  header img {
+    max-width: 300px;
+  }
+
+  .menu__categorie__trait {
+    padding-top: 1%;
+  }
+  .menu__categorie__name--width {
+    min-width: 205px;
+  }
+}
+
+/*# sourceMappingURL=responsive_M1.css.map */

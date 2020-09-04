@@ -4,7 +4,7 @@
   "description": "projet 3 OC",
   "main": "index.js",
   "scripts": {
-    "sass" : "sass --watch ./sass/mobileFirst_style.scss:./css/mobileFirst_style.css ./sass/menu1_style.scss:./css/menu1_style.css ./sass/menu2_style.scss:./css/menu2_style.css ./sass/menu3_style.scss:./css/menu3_style.css ./sass/menu4_style.scss:./css/menu4_style.css"
+    "sass" : "sass --watch ./sass/index_style.scss:./css/index_style.css ./sass/menu1_style.scss:./css/menu1_style.css ./sass/menu2_style.scss:./css/menu2_style.css ./sass/menu3_style.scss:./css/menu3_style.css ./sass/menu4_style.scss:./css/menu4_style.css ./sass/responsive_index.scss:./css/responsive_index.css ./sass/responsive_M1.scss:./css/responsive_M1.css ./sass/responsive_M2.scss:./css/responsive_M2.css ./sass/responsive_M3.scss:./css/responsive_M3.css ./sass/responsive_M4.scss:./css/responsive_M4.css"
   },
   "author": "Bretinière Tom",
   "license": "ISC"

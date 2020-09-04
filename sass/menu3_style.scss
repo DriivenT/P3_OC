@@ -29,16 +29,17 @@ html, body{
 header{
     background-color: $main-bgcolor;
     box-shadow: 0px 1px 3px 0px $main-bgcolor;
+    margin-bottom: 40px;
+    @include flex;
+    justify-content: center;
+    align-items: center;
 
     & img{
-        max-width: 75%;
+        max-width: 240px;
         padding-top: 25px;
         padding-bottom: 20px;
-        margin-right: 12.5%;
-        margin-left: 12.5%;
     }
 }
-
 /* Block Menu */
 
 h1{
@@ -95,6 +96,11 @@ h1{
 
         &__entree, &__plat, &__dessert{
 
+            &--width{
+                min-width: 165px;
+                text-align: center;
+            }
+
             &--underlineEffect::after{
                 content: '';
                 display: block;
@@ -117,7 +123,7 @@ h1{
         &1, &2, &3{
             @include flex;
             justify-content: space-between;
-            @include font(map-get($allFont, fontTitlePlatM3), 0.8em);
+            @include font(map-get($allFont, fontTitlePlatM3), 11px);
             padding-left: 5%;
             padding-right: 5%;
         }
@@ -133,7 +139,7 @@ h1{
     }
 
     &__dessert{
-        @include font(map-get($allFont, fontTitlePlatM3), 0.9em);
+        @include font(map-get($allFont, fontTitlePlatM3), 11px);
     }
 
     h3{

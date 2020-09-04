@@ -29,13 +29,15 @@ html, body{
 header{
     background-color: $main-bgcolor;
     box-shadow: 0px 1px 3px 0px $main-bgcolor;
+    margin-bottom: 40px;
+    @include flex;
+    justify-content: center;
+    align-items: center;
 
     & img{
-        max-width: 75%;
+        max-width: 240px;
         padding-top: 25px;
         padding-bottom: 20px;
-        margin-right: 12.5%;
-        margin-left: 12.5%;
     }
 }
 
@@ -89,8 +91,17 @@ h1{
             align-items: center;
         }
 
+        &__trait{
+            padding-bottom: 2%;
+        }
+
         &__name{
             @include categorieProp($main-colorM1, fontTitleM1, 150%);
+
+            &--width{
+                min-width: 165px;
+                text-align: center;
+            }
 
             &--underlineEffect::after{
                 content: '';

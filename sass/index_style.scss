@@ -1,0 +1,220 @@
+@import 'partiels/_utilitaires.scss';
+
+/* Général */
+html{ 
+    font-size: 100%;
+    background-color: black;
+}
+
+body{
+    font-size: .8em;
+    margin: auto;
+    background-color: white;
+    position: relative;
+    padding-bottom: 20%;
+}
+
+html, body{
+    height: auto;
+    min-height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* Block en tête */
+header{
+    background-color: $main-bgcolor;
+    box-shadow: 0px 1px 3px 0px $main-bgcolor;
+    margin-bottom: 40px;
+    @include flex;
+    justify-content: center;
+    align-items: center;
+
+    & img{
+        max-width: 240px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+}
+
+/* Block Menu */
+
+.menuSelect{
+    @include flex(column);
+
+    &__menu{
+        &--shadow{
+            box-shadow: 1px 1px 10px -5px black;
+        }
+
+        &--property{
+            width: 60%;
+            height: 275px;
+            border-radius: 8px;
+            margin: auto;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+            @include flex(column);
+            justify-content: center;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        &1{
+            background-color: $bgM1;
+
+            &--note{
+                font-size: 2.5em;
+                @include degrade(#F15360, #F78F6A);
+            }
+
+            &--p1, &--p2{
+                color: $main-colorM1;
+            }
+
+            &--p1{
+                @include font(map-get($allFont, fontM1), 175%);
+                margin: 0%;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            &--p2{
+                @include fontTitleM1;
+            }
+
+        }
+        &2{
+            background-color: $bgM2;
+
+            &--p1{
+                @include degrade(#e98410, #8868e0);
+                @include font(map-get($allFont, fontM2), 125%);
+            }
+            &--p2{
+                color: #C77412;
+                @include fontTitleM1;
+            }
+        }
+        &3{
+            background-color: $bgM3;
+
+            &--p1{
+                @include degrade(#072cc0, #1e91fd);
+                @include font(map-get($allFont, fontM3), 135%);
+            }
+            &--p2{
+                color: #0887FB;
+                @include fontTitleM1;
+            }
+        }
+        &4{
+            background-color: $bgM4;
+
+            &--p1{
+                @include degrade(#3D9339, #BFFF7E);
+                @include font(map-get($allFont, fontM4), 160%);
+            }
+            &--p2{
+                color: #72BF56;
+                @include fontTitleM1;
+            }
+        }
+
+        &--animation{
+            opacity: 0.7;
+            transition: .5s ease-in-out;
+            transform: scale(1);
+            transition: .5s ease-in-out;
+            &:hover{
+                opacity: 1;
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    &__btnProch{
+        background-color: $main-bgcolor;
+        color: $main-color;
+        padding-left: 8%;
+        padding-right: 8%;
+        margin-bottom: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+
+        &--txt{
+            text-align: center;
+            width: 215px;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            @include font(map-get($allFont, fontFooter), 200%, 1px);
+        }
+
+        &--animation{
+            &Dot{
+                &1{ 
+                    opacity: 0;
+                    animation: pointSuspension 2s infinite;
+                    animation-delay: 0.0s;
+                }
+
+                &2{
+                    opacity: 0;
+                    animation: pointSuspension 2s infinite;
+                    animation-delay: 0.1s;
+                }
+
+                &3{
+                    opacity: 0;
+                    animation: pointSuspension 2s infinite;
+                    animation-delay: 0.2s;
+                }
+            }
+        }
+    }   
+}
+
+/* Block Pied de page */
+
+.footer{
+    @include flex;
+    background-color: $main-bgcolor;
+    color: $main-color;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    @include font(map-get($allFont, fontFooter), 125%);
+    text-decoration: none;
+    margin-right: auto;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+    &__menLeg{
+        margin-left: 10px;
+        flex: 2;
+    }
+    &__contact{
+        margin-right: 10px;
+    }
+
+    & a{
+        text-decoration: none;
+        color: $main-color;
+    }
+
+    & a:hover{
+        display: inline-block;
+        animation: shake 1s;
+    }
+
+    &__menLeg, &__contact{
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+}

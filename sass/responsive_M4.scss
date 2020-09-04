@@ -1,0 +1,31 @@
+@import 'partiels/_utilitaires.scss';
+
+@media all and (min-width: 768px) and (max-width: 1023px){
+
+    body{
+        font-size: 1em;
+        padding-bottom: 10%;
+    }
+
+    header{
+        & img{
+            max-width: 300px;
+        }
+    }
+
+    .menu{
+        &__categorie{
+            &__entree, &__plat, &__dessert{
+                &--width{
+                    min-width: 210px;
+                }
+            }
+        }
+
+        &__entree, &__plat, &__dessert{
+            &1, &2, &3{
+                @include font(map-get($allFont, fontTitlePlatM4), 1em);
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import 'partiels/_utilitaires.scss';
+
+@media all and (min-width: 768px) and (max-width: 1023px){
+
+    body{
+        font-size: 1em;
+        padding-bottom: 10%;
+    }
+
+    header{
+        & img{
+            max-width: 300px;
+        }
+    }
+
+    .menuSelect{
+        @include flex(row);
+        flex-wrap: wrap;
+
+        &__menu{
+            &--property{
+                width: 40%;
+                height: 450px;
+                font-size: 1.3em;
+            }
+        }
+
+        &__btnProch{
+            padding-left: 5%;
+        }
+    }
+}
