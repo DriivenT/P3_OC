@@ -27,6 +27,21 @@
   font-family: Red Hat Display, sans-serif;
   src: "Google Font";
 }
+/* Keyframes */
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 /* Général */
 html {
   font-size: 100%;
@@ -38,7 +53,6 @@ body {
   margin: auto;
   background-color: white;
   position: relative;
-  max-width: 1200px;
   padding-bottom: 20%;
 }
 
@@ -113,13 +127,11 @@ h1 {
 .menu__categorie__block {
   display: flex;
   flex-direction: row;
-}
-.menu__categorie__trait {
-  padding-top: 5%;
+  justify-content: space-around;
+  align-items: center;
 }
 .menu__categorie__name {
-  display: flex;
-  flex-direction: row;
+  display: inline-block;
   color: #3C1218;
   text-align: center;
   justify-content: center;
@@ -132,7 +144,19 @@ h1 {
   padding-left: 10px;
   font-weight: bold;
   white-space: nowrap;
-  width: 300px;
+}
+.menu__categorie__name--underlineEffect::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #3C1218;
+  transition: width 0.5s;
+}
+.menu__categorie__name--underlineEffect:hover::after {
+  width: 100%;
+  transition: width 0.5s;
 }
 .menu .plat1, .menu .plat2, .menu .plat3, .menu .plat4 {
   display: flex;
@@ -197,6 +221,10 @@ h1 {
 .footer a {
   text-decoration: none;
   color: #FDCB46;
+}
+.footer a:hover {
+  display: inline-block;
+  animation: shake 1s;
 }
 .footer__menLeg, .footer__contact {
   margin-bottom: 0%;

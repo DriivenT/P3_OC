@@ -36,7 +36,7 @@ $bgM4: #FDFFFD;
 }
 
 @mixin categorieProp($color: black, $font, $size){
-    @include flex;
+    display: inline-block;
     color: $color;
     text-align: center;
     justify-content: center;
@@ -47,7 +47,6 @@ $bgM4: #FDFFFD;
     padding-left: 10px;
     font-weight: bold;
     white-space: nowrap;
-    width: 300px;
 }
 
 /* Maps */
@@ -90,4 +89,13 @@ $allFont: (
     src:"Google Font";
     font-family: Red Hat Display, sans-serif;
     src: "Google Font";
+}
+
+/* Keyframes */
+
+@keyframes shake{
+    10%, 90% { transform: translate3d(-1px, 0, 0); }
+    20%, 80% { transform: translate3d(2px, 0, 0); }
+    30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+    40%, 60% { transform: translate3d(4px, 0, 0); }
 }

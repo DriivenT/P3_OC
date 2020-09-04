@@ -13,7 +13,6 @@ body{
     margin: auto;
     background-color: white;
     position: relative;
-    max-width: 1200px;
     padding-bottom: 20%;
 }
 
@@ -74,23 +73,69 @@ h1{
     &__categorie{
         
         &__block{
-            @include flex(row);
-        }
-
-        &__trait{
-            padding-top: 5%;
+            @include flex;
+            justify-content: space-around;
+            align-items: center;
         }
 
         &__entree{
             @include categorieProp(#C77412, fontTitlePlatM2, 125%);
+
+            &--underlineEffect::after{
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                border-radius: 2px;
+                background-color: #C77412;
+                transition: width .5s;
+                
+            }
+            &--underlineEffect:hover::after{
+                width: 100%;
+                transition: width .5s;
+
+            }
         }
 
         &__plat{
             @include categorieProp(#A56799, fontTitlePlatM2, 125%);
+
+            &--underlineEffect::after{
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                border-radius: 2px;
+                background-color: #A56799;
+                transition: width .5s;
+                
+            }
+            &--underlineEffect:hover::after{
+                width: 100%;
+                transition: width .5s;
+
+            }
         }
 
         &__dessert{
             @include categorieProp(#6E4CCC, fontTitlePlatM2, 125%);
+
+            &--underlineEffect::after{
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                border-radius: 2px;
+                background-color: #6E4CCC;
+                transition: width .5s;
+                
+            }
+            &--underlineEffect:hover::after{
+                width: 100%;
+                transition: width .5s;
+
+            }
         }
     }
 
@@ -163,6 +208,11 @@ h1{
     & a{
         text-decoration: none;
         color: $main-color;
+    }
+
+    & a:hover{
+        display: inline-block;
+        animation: shake 1s;
     }
 
     &__menLeg, &__contact{

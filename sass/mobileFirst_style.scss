@@ -11,7 +11,6 @@ body{
     margin: auto;
     background-color: white;
     position: relative;
-    max-width: 1200px;
     padding-bottom: 20%;
 }
 
@@ -46,12 +45,13 @@ header{
 
     &__menu{
         &--shadow{
-            box-shadow: 0px 0px 8px -5px black;
+            box-shadow: 1px 1px 10px -5px black;
         }
 
         &--property{
             min-width: 60%;
             min-height: 250px;
+            border-radius: 8px;
             margin: auto;
             margin-bottom: 40px;
             font-size: 1.1em;
@@ -171,6 +171,11 @@ header{
     & a{
         text-decoration: none;
         color: $main-color;
+    }
+
+    & a:hover{
+        display: inline-block;
+        animation: shake 1s;
     }
 
     &__menLeg, &__contact{

@@ -27,6 +27,21 @@
   font-family: Red Hat Display, sans-serif;
   src: "Google Font";
 }
+/* Keyframes */
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 /* Général */
 html {
   font-size: 100%;
@@ -38,7 +53,6 @@ body {
   margin: auto;
   background-color: white;
   position: relative;
-  max-width: 1200px;
   padding-bottom: 20%;
 }
 
@@ -71,11 +85,12 @@ header img {
   flex-direction: column;
 }
 .menuSelect__menu--shadow {
-  box-shadow: 0px 0px 8px -5px black;
+  box-shadow: 1px 1px 10px -5px black;
 }
 .menuSelect__menu--property {
   min-width: 60%;
   min-height: 250px;
+  border-radius: 8px;
   margin: auto;
   margin-bottom: 40px;
   font-size: 1.1em;
@@ -227,6 +242,10 @@ header img {
 .footer a {
   text-decoration: none;
   color: #FDCB46;
+}
+.footer a:hover {
+  display: inline-block;
+  animation: shake 1s;
 }
 .footer__menLeg, .footer__contact {
   margin-bottom: 0%;

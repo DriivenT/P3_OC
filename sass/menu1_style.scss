@@ -13,7 +13,6 @@ body{
     margin: auto;
     background-color: white;
     position: relative;
-    max-width: 1200px;
     padding-bottom: 20%;
 }
 
@@ -85,15 +84,29 @@ h1{
     &__categorie{
         
         &__block{
-            @include flex(row);
-        }
-
-        &__trait{
-            padding-top: 5%;
+            @include flex;
+            justify-content: space-around;
+            align-items: center;
         }
 
         &__name{
             @include categorieProp($main-colorM1, fontTitleM1, 150%);
+
+            &--underlineEffect::after{
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                border-radius: 2px;
+                background-color: $main-colorM1;
+                transition: width .5s;
+                
+            }
+            &--underlineEffect:hover::after{
+                width: 100%;
+                transition: width .5s;
+
+            }
         }
     }
 
@@ -157,6 +170,11 @@ h1{
     & a{
         text-decoration: none;
         color: $main-color;
+    }
+
+    & a:hover{
+        display: inline-block;
+        animation: shake 1s;
     }
 
     &__menLeg, &__contact{
