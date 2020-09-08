@@ -213,7 +213,7 @@ header img {
 }
 .menuSelect__menu--animation:hover {
   opacity: 1;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .menuSelect__btnProch {
   background-color: #579C87;

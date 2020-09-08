@@ -131,9 +131,8 @@ h1 {
 .menu__categorie__block {
   display: flex;
   flex-direction: row;
-}
-.menu__categorie__trait {
-  padding-top: 4%;
+  justify-content: space-around;
+  align-items: center;
 }
 .menu__categorie__entree {
   display: inline-block;

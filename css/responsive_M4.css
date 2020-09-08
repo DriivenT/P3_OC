@@ -52,7 +52,7 @@
     opacity: 1;
   }
 }
-@media all and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 640px) and (max-width: 1023px) {
   body {
     font-size: 1em;
     padding-bottom: 10%;
@@ -62,13 +62,95 @@
     max-width: 300px;
   }
 
+  .menu h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
+  }
+  .menu__categorie__trait {
+    padding-top: 1%;
+  }
   .menu__categorie__entree--width, .menu__categorie__plat--width, .menu__categorie__dessert--width {
-    min-width: 210px;
+    min-width: 205px;
   }
   .menu__entree1, .menu__entree2, .menu__entree3, .menu__plat1, .menu__plat2, .menu__plat3, .menu__dessert1, .menu__dessert2, .menu__dessert3 {
     font-family: Architects Daughter;
     letter-spacing: 0px;
     font-size: 1em;
+  }
+  .menu h3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 210px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  body {
+    font-size: 1em;
+    padding-bottom: 10%;
+  }
+
+  header img {
+    max-width: 400px;
+  }
+
+  .menu h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
+  }
+  .menu__categorie__trait {
+    padding-top: 1%;
+  }
+  .menu__categorie__entree--width, .menu__categorie__plat--width, .menu__categorie__dessert--width {
+    min-width: 205px;
+  }
+  .menu__entree1, .menu__entree2, .menu__entree3, .menu__plat1, .menu__plat2, .menu__plat3, .menu__dessert1, .menu__dessert2, .menu__dessert3 {
+    font-family: Architects Daughter;
+    letter-spacing: 0px;
+    font-size: 1em;
+  }
+  .menu h3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 210px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 1.2em;
+    padding-bottom: 10%;
+  }
+
+  header img {
+    max-width: 425px;
+  }
+
+  .menu {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .menu h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+  }
+  .menu__categorie__trait {
+    padding-top: 1%;
+  }
+  .menu__categorie__entree--width, .menu__categorie__plat--width, .menu__categorie__dessert--width {
+    min-width: 240px;
+  }
+  .menu__entree1, .menu__entree2, .menu__entree3, .menu__plat1, .menu__plat2, .menu__plat3, .menu__dessert1, .menu__dessert2, .menu__dessert3 {
+    font-family: Architects Daughter;
+    letter-spacing: 0px;
+    font-size: 1em;
+  }
+  .menu h3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
   }
 }
 

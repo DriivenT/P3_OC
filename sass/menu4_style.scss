@@ -75,11 +75,9 @@ h1{
     &__categorie{
         
         &__block{
-            @include flex(row);
-        }
-
-        &__trait{
-            padding-top: 4%;
+            @include flex;
+            justify-content: space-around;
+            align-items: center;
         }
 
         &__entree{

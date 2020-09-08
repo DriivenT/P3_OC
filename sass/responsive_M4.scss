@@ -1,6 +1,6 @@
 @import 'partiels/_utilitaires.scss';
 
-@media all and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 640px) and (max-width: 1023px){
 
     body{
         font-size: 1em;
@@ -14,10 +14,22 @@
     }
 
     .menu{
+
+        h2{
+            margin-left: auto;
+            margin-right: auto;
+            width: 230px;
+        }
+
         &__categorie{
+
+            &__trait{
+                padding-top: 1%;
+            }
+
             &__entree, &__plat, &__dessert{
                 &--width{
-                    min-width: 210px;
+                    min-width: 205px;
                 }
             }
         }
@@ -26,6 +38,111 @@
             &1, &2, &3{
                 @include font(map-get($allFont, fontTitlePlatM4), 1em);
             }
+        }
+
+        h3{
+            margin-left: auto;
+            margin-right: auto;
+            width: 210px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+
+    body{
+        font-size: 1em;
+        padding-bottom: 10%;
+    }
+
+    header{
+        & img{
+            max-width: 400px;
+        }
+    }
+
+    .menu{
+
+        h2{
+            margin-left: auto;
+            margin-right: auto;
+            width: 230px;
+        }
+
+        &__categorie{
+
+            &__trait{
+                padding-top: 1%;
+            }
+
+            &__entree, &__plat, &__dessert{
+                &--width{
+                    min-width: 205px;
+                }
+            }
+        }
+
+        &__entree, &__plat, &__dessert{
+            &1, &2, &3{
+                @include font(map-get($allFont, fontTitlePlatM4), 1em);
+            }
+        }
+
+        h3{
+            margin-left: auto;
+            margin-right: auto;
+            width: 210px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px){
+
+    body{
+        font-size: 1.2em;
+        padding-bottom: 10%;
+    }
+
+    header{
+        & img{
+            max-width: 425px;
+        }
+    }
+
+    .menu{
+        width: 75%;
+        margin-right: auto;
+        margin-left: auto;
+
+        h2{
+            margin-left: auto;
+            margin-right: auto;
+            width: 250px;
+        }
+
+        &__categorie{
+
+            &__trait{
+                padding-top: 1%;
+            }
+
+            &__entree, &__plat, &__dessert{
+                &--width{
+                    min-width: 240px;
+                }
+            }
+        }
+
+        &__entree, &__plat, &__dessert{
+            &1, &2, &3{
+                @include font(map-get($allFont, fontTitlePlatM4), 1em);
+            }
+        }
+
+        h3{
+            margin-left: auto;
+            margin-right: auto;
+            width: 230px;
         }
     }
 }
