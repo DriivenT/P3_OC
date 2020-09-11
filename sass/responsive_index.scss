@@ -15,7 +15,8 @@
 
     .menuSelect{
         @include flex(row);
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 
         &__menu{
             &--property{
@@ -48,7 +49,8 @@
 
     .menuSelect{
         @include flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 
         &__menu{
             &--property{
@@ -86,7 +88,8 @@
 
     .menuSelect{
         @include flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 
         &__menu{
             &--property{

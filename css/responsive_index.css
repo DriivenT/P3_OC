@@ -3,42 +3,75 @@
 /* Maps */
 /* Polices */
 @font-face {
-  font-family: Roboto, cursive;
-  src: "GoogleFont";
+  font-family: Roboto, sans-serif;
+  src: url(https://fonts.google.com/specimen/Roboto);
   font-family: Chilanka, cursive;
-  src: "Google Font";
+  src: url(https://fonts.google.com/specimen/Chilanka);
   font-family: Devonshire, cursive;
-  src: "Google Font";
+  src: url(https://fonts.google.com/specimen/Devonshire);
   font-family: Lobster Two, cursive;
-  src: "Google Font";
+  src: url(https://fonts.google.com/specimen/Lobster+Two);
   font-family: Dancing Script, cursive;
-  src: "Google Font";
+  src: url(https://fonts.google.com/specimen/Dancing+Script);
   font-family: Caveat, cursive;
-  src: "Google Font";
+  src: url(https://fonts.google.com/specimen/Caveat);
   font-family: Mali, cursive;
-  src: "Google Font";
-  font-family: Roboto Slab, cursive;
-  src: "Google Font";
+  src: url(https://fonts.google.com/specimen/Mali);
+  font-family: Roboto Slab, sans-serif;
+  src: url(https://fonts.google.com/specimen/Roboto+Slab);
   font-family: Kalam, cursive;
-  src: "Google Font";
+  src: url(https://fonts.google.com/specimen/Kalam);
   font-family: Architects Daughter, cursive;
-  src: "Google Font";
+  src: url(https://fonts.google.com/specimen/Architects+Daughter);
   font-family: Red Hat Display, sans-serif;
-  src: "Google Font";
+  src: url(https://fonts.google.com/specimen/Red+Hat+Display);
 }
 /* Keyframes */
-@keyframes shake {
+@-webkit-keyframes shake {
   10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
     transform: translate3d(-1px, 0, 0);
   }
   20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
     transform: translate3d(2px, 0, 0);
   }
   30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
     transform: translate3d(-4px, 0, 0);
   }
   40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
     transform: translate3d(4px, 0, 0);
+  }
+}
+@keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+    transform: translate3d(4px, 0, 0);
+  }
+}
+@-webkit-keyframes pointSuspension {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes pointSuspension {
@@ -63,8 +96,14 @@
   }
 
   .menuSelect {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   .menuSelect__menu--property {
@@ -90,8 +129,14 @@
   }
 
   .menuSelect {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   .menuSelect__menu--property {
@@ -122,8 +167,14 @@
   }
 
   .menuSelect {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   .menuSelect__menu--property {

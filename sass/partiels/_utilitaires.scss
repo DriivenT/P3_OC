@@ -24,6 +24,8 @@ $bgM4: #FDFFFD;
 }
 
 @mixin degrade($color1: black, $color2: grey){
+    background: -webkit-gradient(linear, left top, right top, from($color1), to($color2));
+    background: -o-linear-gradient(left, $color1, $color2);
     background: linear-gradient(to right, $color1, $color2);
     background-clip: text;
     -webkit-background-clip: text;
@@ -31,15 +33,22 @@ $bgM4: #FDFFFD;
 }
 
 @mixin flex($direction: row){
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: $direction;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: $direction;
+            flex-direction: $direction;
 }
 
 @mixin categorieProp($color: black, $font, $size){
     display: inline-block;
     color: $color;
     text-align: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     @include font(map-get($allFont, $font), $size);
     margin-bottom: 2%;
     margin-top: 5%;
@@ -66,42 +75,92 @@ $allFont: (
 );
 
 /* Polices */
+
 @font-face {
-    font-family: Roboto, cursive;
-    src:"GoogleFont";
+    font-family: Roboto, sans-serif;
+    src: url(https://fonts.google.com/specimen/Roboto);
     font-family: Chilanka, cursive;
-    src:"Google Font";
+    src: url(https://fonts.google.com/specimen/Chilanka);
     font-family: Devonshire, cursive;
-    src:"Google Font";
+    src: url(https://fonts.google.com/specimen/Devonshire);
     font-family: Lobster Two, cursive;
-    src:"Google Font";
+    src: url(https://fonts.google.com/specimen/Lobster+Two);
     font-family: Dancing Script, cursive;
-    src:"Google Font";
+    src: url(https://fonts.google.com/specimen/Dancing+Script);
     font-family: Caveat, cursive;
-    src:"Google Font";
+    src: url(https://fonts.google.com/specimen/Caveat);
     font-family: Mali, cursive;
-    src:"Google Font";
-    font-family: Roboto Slab, cursive;
-    src:"Google Font";
+    src: url(https://fonts.google.com/specimen/Mali);
+    font-family: Roboto Slab, sans-serif;
+    src: url(https://fonts.google.com/specimen/Roboto+Slab);
     font-family: Kalam, cursive;
-    src:"Google Font";
+    src: url(https://fonts.google.com/specimen/Kalam);
     font-family: Architects Daughter, cursive;
-    src:"Google Font";
+    src: url(https://fonts.google.com/specimen/Architects+Daughter);
     font-family: Red Hat Display, sans-serif;
-    src: "Google Font";
+    src: url(https://fonts.google.com/specimen/Red+Hat+Display);
 }
 
 /* Keyframes */
 
+@-webkit-keyframes shake{
+    10%, 90%{ 
+        -webkit-transform: translate3d(-1px, 0, 0); 
+                transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80%{
+        -webkit-transform: translate3d(2px, 0, 0);
+                transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70%{
+        -webkit-transform: translate3d(-4px, 0, 0);
+                transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60%{
+        -webkit-transform: translate3d(4px, 0, 0);
+                transform: translate3d(4px, 0, 0);
+    }
+}
+
 @keyframes shake{
-    10%, 90% { transform: translate3d(-1px, 0, 0); }
-    20%, 80% { transform: translate3d(2px, 0, 0); }
-    30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
-    40%, 60% { transform: translate3d(4px, 0, 0); }
+    10%, 90%{ 
+        -webkit-transform: translate3d(-1px, 0, 0); 
+                transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80%{
+        -webkit-transform: translate3d(2px, 0, 0);
+                transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70%{
+        -webkit-transform: translate3d(-4px, 0, 0);
+                transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60%{
+        -webkit-transform: translate3d(4px, 0, 0);
+                transform: translate3d(4px, 0, 0);
+    }
+}
+
+@-webkit-keyframes pointSuspension{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 @keyframes pointSuspension{
-    0% { opacity: 0; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
